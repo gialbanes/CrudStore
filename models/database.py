@@ -2,7 +2,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
-# Classe responsável por criar a entidade "Estudante" com os atributos: id, nome e idade. 
+# Classe responsável por criar a entidade "Produto" com os atributos: nome, descrição e valor. 
 class Produto(db.Model):
     id = db.Column('id', db.Integer, primary_key=True, autoincrement=True)
     nome = db.Column(db.String(150))
